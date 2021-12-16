@@ -1,31 +1,64 @@
 <!doctype html>
 <html>
 <head>
-  <title>DK's webpage</title>
+  <title>DK studio</title>
   <meta charset="utf-8">
   <style>
+    .Title{
+      color:black
+    }
     a {
-      color:gray;
+      color:black;
       text-decoration: none;
     }
     h1 {
       font-size:40px;
       text-align:center;
+      margin:0px;
+      padding:20px;
+      background-color:#DDDDDD;
+      border-bottom:5px solid white;
+    }
+    h2 {
+      font-size:20px;
+      color:black;
+      text-align:center;
+      margin:0px;
+      padding:20px;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      column-gap:5px;
+    }
+    .grid ol{padding-left:30px}
+    .contents{
+      border-right:1px solid gray;
+    }
+    .article{
+      padding-left: 20px;
+    }
+    #active{
+      font-weight:bold;
+      text-decoration:underline;
     }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS<a/></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </0l>
+  <h1><a class="Title" href="index.html">DK studio</a></h1>
+  <div class="grid">
+    <div class="contents">
+      <ol>
+        <li><a href="aboutme.html">개발자 소개</a></li>
+        <li><a href="onlinecafe.html">Online cafe<a/></li>
+      </ol>
+    </div>
+    <div class="article">
+    <h2>Welcome to my creative web studio!</h2>
+    <p>시작한 지 얼마 되지 않아 아직 시시하지만, 여러 가지 흥미로운 시도를 해보며 실력을 길러나가겠습니다.</p> <p>각종 아이디어 환영합니다.^^</p>
+      <img src="main.jpg" width="500px">
 
-  <h2>Welcom to DK's webpage</h2>
-  <img src="coding.jpg" width="400">
+    </div>
+  </div>
 
-
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HX3fkGyszRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p
 </body>
