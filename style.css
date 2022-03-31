@@ -14,7 +14,7 @@ h1 {
   margin:0px;
   padding:15px;
   background-color:#DDDDDD;
-  border-bottom:5px solid white;
+  border-bottom:1px solid white;
   background-image: url('titleimage.jpg');
   background-position: center;
 }
@@ -27,10 +27,10 @@ h2 {
 }
 .grid{
   display: grid;
-  grid-template-columns: 150px 1fr;
-  column-gap:5px;
+  grid-template-columns: 120px 1fr;
+  column-gap:1px;
 }
-.grid ol{padding-left:30px}
+.grid ol{padding-left:10px}
 .contents{
   #border-right:1px solid gray;
   background-color: #D7F1FA;
@@ -44,4 +44,10 @@ h2 {
 #active{
   font-weight:bold;
   text-decoration:underline;
+}
+@media(max-width:800px){
+  .grid{
+    display: block;
+  }
+
 }
